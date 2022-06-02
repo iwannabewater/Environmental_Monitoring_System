@@ -62,7 +62,7 @@ font = ImageFont.load_default()
 for num in range(1,8):    
     time.sleep(1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((x, top + 0), "Zhao's PI", font=font, fill=255)
+    draw.text((x, top + 0), "FW1509's PI", font=font, fill=255)
     draw.text((x, top + 8), "Starting up...", font=font, fill=255)
     draw.text((x, top + 16), "...init...", font=font, fill=255)
     draw.text((x, top + 25), "Time: " + str(12 - num), font=font, fill=255)
@@ -72,7 +72,7 @@ for num in range(1,8):
 for num in range(8,12):
     time.sleep(1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((x, top + 0), "Zhao's PI", font=font, fill=255)
+    draw.text((x, top + 0), "FW1509's PI", font=font, fill=255)
     draw.text((x, top + 8), "Starting up...", font=font, fill=255)
     draw.text((x, top + 16), "...update...", font=font, fill=255)
     draw.text((x, top + 25), "Time: " + str(12 - num), font=font, fill=255)
