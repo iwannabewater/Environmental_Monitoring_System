@@ -10,9 +10,9 @@ Environmental data collection in the project uses Raspberry Pi with several sens
 
 ---
 本项目为河南工业大学物联网应用系统综合课设，具体应用为环境指标监控系统，用于环境内温度、湿度、光照、火焰预警等数据的检测与管理。本项目主要采用C/S架构，总体形式为单server端多client端。server端主要进行数据汇总与转发，client端用于数据上传与数据获取。
-  client端细分为树莓派端与PC端。树莓派端用于接收传感器数据并上传至server端；PC端使用QT编写GUI，用于请求接收server端数据并显示。
-  server端架设至云服务器，用于接收并保存树莓派端的数据并转发至PC端显示。server端采用多线程、epoll等技术提高整体并发与可用性。C/S之间整体采用自定义应用层协议(传输层协议使用TCP)进行数据传输，来保证整体数据的完整性。
-  项目中环境数据的采集使用树莓派搭配若干传感器进行，主要使用的传感器/硬件有：树莓派4B、ssd1306显示屏、dht11温湿度传感器、LM2904分贝传感器。传感器数据主要使用python脚本进行获取，并通过shell脚本进行汇总与管理。
+client端细分为树莓派端与PC端。树莓派端用于接收传感器数据并上传至server端；PC端使用QT编写GUI，用于请求接收server端数据并显示。
+server端架设至云服务器，用于接收并保存树莓派端的数据并转发至PC端显示。server端采用多线程、epoll等技术提高整体并发与可用性。C/S之间整体采用自定义应用层协议(传输层协议使用TCP)进行数据传输，来保证整体数据的完整性。
+项目中环境数据的采集使用树莓派搭配若干传感器进行，主要使用的传感器/硬件有：树莓派4B、ssd1306显示屏、dht11温湿度传感器、LM2904分贝传感器。传感器数据主要使用python脚本进行获取，并通过shell脚本进行汇总与管理。
   
   # project directory
 - client4PC    client端 for PC(windows)
