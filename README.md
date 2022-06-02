@@ -71,5 +71,5 @@ $ vim m_server.cpp +45 #修改数据库登录用户/密码
 $ make
 $ ./pi_net #启动
 ```
-# 版权说明
+# Copyright statement
 该项目签署了 Apache-2.0 授权许可，详情请参阅 LICENSE
